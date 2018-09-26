@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Form Elements</title>
+    <style>
+        body{
+            font-family: "Times New Roman";
+        }
+        h2{
+            font-size: 15px;
+        }
+        form{
+            background-color: lightskyblue;
+            padding: 15px;
+            width: 400px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px black;
+        }
+    </style>
+</head>
+<body>
+
+
+    <!-- Simple Login Form -->
+    <h2>Simple Login Form</h2>
+    <form>
+        <label for="user">Username</label>
+        <input type="text" id="user">
+        <br>
+        <label for="pass">Password</label>
+        <input type="password" id="pass">
+        <br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+    <!-- Login form with Table -->
+    <h2>Login Form with Table</h2>
+    <form>
+        <table>
+            <tr>
+                <td>
+                    <label>Username</label>
+
+                </td>
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Password</label>
+                </td>
+                <td>
+                    <input type="password">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Submit">
+                </td>
+                <td>
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+
+        </table>
+
+    </form>
+    <!-- Select box with Options -->
+    <h2>Select Box with Options</h2>
+    <form>
+        <label for="lang">Select a Language</label>
+        <select id="lang">
+            <option>HTML</option>
+            <option>CSS</option>
+            <option>JAVASCRIPT</option>
+            <option>BOOTSTRAP</option>
+            <option>JQUERY</option>
+            <option>AJAX</option>
+            <option>ANGULAR JS</option>
+
+        </select>
+    </form>
+    <!-- Textarea box -->
+    <h2>Textarea box</h2>
+    <form>
+        <label>Your Meassage</label>
+        <textarea rows="10" cols="50" ></textarea>
+    </form>
+    <!-- Datalist (HTML5) -->
+    <h2>Datalist (HTML5)</h2>
+    <form>
+        <label for="language">Select a Language</label>
+        <input list="language">
+        <datalist id="language">
+            <option>HTML</option>
+            <option>CSS</option>
+            <option>JAVASCRIPT</option>
+            <option>BOOTSTRAP</option>
+            <option>JQUARY</option>
+            <option>AJAX</option>
+            <option>ANGULAR JS</option>
+
+        </datalist>
+    </form>
+    <!--Select box with optgroup-->
+    <h2>Select box with optgroup</h2>
+    <form>
+        <label>select Technology</label>
+        <select>
+            <optgroup label="language">
+                <option>java</option>
+                <option>.net</option>
+                <option>python</option>
+                <option>PHP</option>
+            </optgroup>
+            <optgroup label="script">
+                <option>shell</option>
+                <option>javascript</option>
+            </optgroup>
+        </select>
+    </form>
+
+</body>
+</html>
